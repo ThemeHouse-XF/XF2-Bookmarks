@@ -1,0 +1,14 @@
+{
+    "edit_format": "callback",
+    "edit_format_params": "\\ThemeHouse\\Bookmarks\\Option\\BookmarkHandlers::renderCheckbox",
+    "data_type": "array",
+    "sub_options": [
+        "*"
+    ],
+    "validation_class": "",
+    "validation_method": "",
+    "default_value": "[\"node\",\"post\",\"resource\",\"thread\",\"xfmg_media\"]",
+    "relations": {
+        "th_bookmarks": 1
+    }
+}

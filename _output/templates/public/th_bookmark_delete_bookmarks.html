@@ -1,0 +1,21 @@
+<xf:title>{{ phrase('th_delete_bookmark_bookmarks') }}</xf:title>
+
+<xf:form action="{{ link('bookmarks/delete', $bookmark) }}" class="block" ajax="true">
+	<div class="block-container">
+		<div class="block-body">
+			<xf:inforow rowtype="confirm">
+				{{ phrase('th_confirm_that_you_want_to_remove_following_bookmark_bookmarks:') }}
+				<strong>
+					<a href="{{ link('bookmarks/edit', $bookmark) }}"
+					   data-xf-click="overlay">
+						{$bookmark.title}
+					</a>
+				</strong>
+			</xf:inforow>
+
+			{{$handler->renderExtraDeleteFields($content)|raw}}
+		</div>
+		<xf:submitrow icon="delete" sticky="true" />
+	</div>
+	<xf:redirect />
+</xf:form>

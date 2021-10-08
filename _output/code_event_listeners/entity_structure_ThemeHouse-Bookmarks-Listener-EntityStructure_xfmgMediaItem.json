@@ -1,0 +1,9 @@
+{
+    "event_id": "entity_structure",
+    "execute_order": 10,
+    "callback_class": "\\ThemeHouse\\Bookmarks\\Listener\\EntityStructure",
+    "callback_method": "xfmgMediaItem",
+    "active": true,
+    "hint": "XFMG\\Entity\\MediaItem",
+    "description": "XFMG\\Entity\\MediaItem"
+}

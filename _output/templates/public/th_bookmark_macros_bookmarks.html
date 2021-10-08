@@ -1,0 +1,135 @@
+<xf:macro name="bookmark_content"
+		  arg-bookmarkTooltip="{{ false }}"
+		  arg-unbookmarkTooltip="{{ false }}"
+		  arg-currentBookmark="{{ false }}"
+		  arg-contentType="!"
+		  arg-isButton="{{ false }}"
+		  arg-aClass="{{ false }}"
+		  arg-contentId="!">
+	<xf:if is="$currentBookmark">
+		<xf:set var="$iconClass">{{ property('th_bookmarkIconClass_bookmarked_bookmarks') }}</xf:set>
+		<xf:if is="$unbookmarkTooltip">
+			<xf:set var="$tooltip">{$unbookmarkTooltip}</xf:set>
+			<xf:else />
+			<xf:set var="$tooltip">{{ phrase('th_unbookmark_content_bookmarks') }}</xf:set>
+		</xf:if>
+		<xf:if is="$xf.options.thbookmarks_fastBookmark">
+			<xf:set var="$bookmarkUrl"
+					value="{{ link('bookmarks/confirm', null, {"content_type": $contentType, "content_id": $contentId}) }}" />
+			<xf:else />
+			<xf:set var="$bookmarkUrl"
+					value="{{ link('bookmarks/edit', $currentBookmark) }}"/>
+		</xf:if>
+		<xf:else />
+		<xf:set var="$iconClass">{{ property('th_bookmarkIconClass_bookmarks') }}</xf:set>
+		<xf:if is="$bookmarkTooltip">
+			<xf:set var="$tooltip">{$bookmarkTooltip}</xf:set>
+			<xf:else />
+			<xf:set var="$tooltip">{{ phrase('th_bookmark_content_bookmarks') }}</xf:set>
+		</xf:if>
+		<xf:set var="$bookmarkUrl"
+				value="{{ link('bookmarks/confirm', null, {"content_type": $contentType, "content_id": $contentId}) }}" />
+	</xf:if>
+
+	<xf:if is="$isButton">
+		<xf:button href="{$bookmarkUrl}"
+				   class="{$aClass} {$iconClass} button--link button--link button--bookmark"
+				   data-xf-init="tooltip"
+				   title="{$tooltip}"
+				   data-xf-click="switch{{ !$xf.options.thbookmarks_fastBookmark ? '-overlay' : '' }}"
+				   data-sk-unbookmark="removeClass:{{ property('th_bookmarkIconClass_bookmarked_bookmarks') }},addClass:{{ property('th_bookmarkIconClass_bookmarks') }},"
+				   data-sk-bookmark="removeClass:{{ property('th_bookmarkIconClass_bookmarks') }},addClass:{{ property('th_bookmarkIconClass_bookmarked_bookmarks') }},">
+		</xf:button>
+		<xf:else />
+		<a href="{$bookmarkUrl}"
+		   class="{$aClass} {$iconClass}"
+		   data-xf-init="tooltip"
+		   title="{$tooltip}"
+		   data-xf-click="switch{{ !$xf.options.thbookmarks_fastBookmark ? '-overlay' : '' }}"
+		   data-sk-unbookmark="removeClass:{{ property('th_bookmarkIconClass_bookmarked_bookmarks') }},addClass:{{ property('th_bookmarkIconClass_bookmarks') }},"
+		   data-sk-bookmark="removeClass:{{ property('th_bookmarkIconClass_bookmarks') }},addClass:{{ property('th_bookmarkIconClass_bookmarked_bookmarks') }},">
+		</a>
+	</xf:if>
+	
+	<xf:css src="th_bookmarks.less" />
+
+</xf:macro>
+
+<xf:macro name="watch_thread"
+		  arg-thread="!"
+		  arg-watch="!">
+	<xf:if is="$thread.canWatch()">
+		<xf:checkboxrow>
+			<xf:option name="watch_thread"
+					   value="1"
+					   label="{{ phrase('watch_this_thread...') }}"
+					   selected="{$watch}">
+				<xf:radio name="email_subscribe">
+					<xf:option value="1"
+							   label="{{ phrase('and_receive_email_notifications') }}"
+							   selected="{{ $watch.email_subscribe ? true : false }}"/>
+					<xf:option value="0"
+							   label="{{ phrase('without_receiving_email_notifications') }}"
+							   selected="{{ $watch.email_subscribe ? false : true }}"/>
+				</xf:radio>
+			</xf:option>
+		</xf:checkboxrow>
+	</xf:if>
+</xf:macro>
+
+<xf:macro name="row"
+		  arg-bookmark="!"
+		  arg-type="popup"
+		  arg-editLink="{{ true }}"
+		  arg-fauxBlockList="{{ false }}"
+		  arg-widget="{{ false }}"
+		  arg-options="{{ false }}">
+	<xf:if is="$fauxBlockList"><div class="fauxBlockLink"></xf:if>
+		<div class="contentRow bookmarkRow {{ $bookmark.public ? 'bookmarkRow--public' : '' }} {{ $bookmark.sticky ? 'bookmarkRow--sticky' : '' }}">
+			<div class="contentRow-figure">
+				{$bookmark.renderIcon()|raw}
+			</div>
+			<div class="contentRow-main contentRow-main--close">
+				<div class="bookmarkRow-content">
+					<div class="bookmarkRow-meta u-muted">
+						<xf:if is="$bookmark.public">
+							<i class="{{ property('th_publicIconClass_bookmarks') }}"
+							   aria-hidden="true"
+							   title="{{ phrase('public') }}"></i>
+						</xf:if>
+						<xf:if is="$bookmark.sticky">
+							<i class="{{ property('th_stickyIconClass_bookmarks') }}"
+							   aria-hidden="true"
+							   title="{{ phrase('sticky') }}"></i>
+						</xf:if>
+					</div>
+					{$bookmark.render('list', $options)|raw}
+				</div>
+
+				<xf:if is="$bookmark.note && !$options.hide_note">
+					<div class="bookmarkRow-note">
+						<div class="bbCodeBlock bbCodeBlock--quote">
+							<div class="bbCodeBlock-content">
+								{$bookmark.note}
+							</div>
+						</div>
+					</div>
+				</xf:if>
+
+				<div class="contentRow-minor contentRow-minor--smaller">
+					<xf:if is="!$options.hide_date">
+						<xf:date time="$bookmark.bookmark_date" />
+					</xf:if>
+					<div class="bookmarkRow-meta">
+						<xf:if is="$editLink">
+							<a href="{{ link('bookmarks/edit', $bookmark, {'redirect': link('bookmarks')}) }}"
+							   data-xf-click="overlay">
+								{{ phrase('edit') }}
+							</a>
+						</xf:if>
+					</div>
+				</div>
+			</div>
+		</div>
+		<xf:if is="$fauxBlockList"></div></xf:if>
+</xf:macro>

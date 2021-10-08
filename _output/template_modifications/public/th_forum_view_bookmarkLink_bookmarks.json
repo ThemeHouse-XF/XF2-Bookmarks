@@ -1,0 +1,9 @@
+{
+    "template": "forum_view",
+    "description": "Adds bookmark link to forum view",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "<xf:if is=\"$forum.canWatch()\">",
+    "replace": "<xf:include template=\"th_forum_view_bookmarkLink_bookmarks\" />\n$0"
+}

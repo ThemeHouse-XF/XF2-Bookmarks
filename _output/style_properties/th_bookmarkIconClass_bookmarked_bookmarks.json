@@ -1,0 +1,13 @@
+{
+    "group_name": "th_bookmarks",
+    "title": "Bookmark icon class (bookmarked)",
+    "description": "This is the icon that will be displayed on content that has already been bookmarked.",
+    "property_type": "value",
+    "css_components": [],
+    "value_type": "string",
+    "value_parameters": "",
+    "depends_on": "",
+    "value_group": "",
+    "property_value": "fa fa-bookmark",
+    "display_order": 1001
+}

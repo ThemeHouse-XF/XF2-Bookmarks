@@ -1,0 +1,13 @@
+{
+    "group_name": "th_bookmarks",
+    "title": "Bookmark icon class",
+    "description": "Set the class for the bookmark icon here if you'd like to use a different font set or a different FontAwesome icon.",
+    "property_type": "value",
+    "css_components": [],
+    "value_type": "string",
+    "value_parameters": "",
+    "depends_on": "",
+    "value_group": "",
+    "property_value": "fa fa-bookmark-o",
+    "display_order": 1000
+}

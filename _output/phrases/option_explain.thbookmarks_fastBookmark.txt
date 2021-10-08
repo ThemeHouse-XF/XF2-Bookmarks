@@ -1,0 +1,1 @@
+If this option is enabled, bookmark & unbookmark button will become single-click actions without the possibility for the user to configure them or add notes to them. This speeds up the process of bookmarking content.

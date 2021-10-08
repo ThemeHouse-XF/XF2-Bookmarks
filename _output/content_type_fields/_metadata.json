@@ -1,0 +1,23 @@
+{
+    "node-entity.json": {
+        "hash": "952e9acf116111f58e02ad511e6f1df5"
+    },
+    "node-th_bookmark_handler_class.json": {
+        "hash": "e2789749e4f349770c72430628a281d5"
+    },
+    "post-th_bookmark_handler_class.json": {
+        "hash": "22c7a25041b5b8d94ab0d77f0fa9a682"
+    },
+    "resource-th_bookmark_handler_class.json": {
+        "hash": "a52ef36e79b41be2ea387bb2a79f0b07"
+    },
+    "thbookmarks_bookmark-stats_handler_class.json": {
+        "hash": "93ab7965327d119a2fa51c8671c96ac5"
+    },
+    "thread-th_bookmark_handler_class.json": {
+        "hash": "bd09a76e7ed696591b6cdadaa9de6d15"
+    },
+    "xfmg_media-th_bookmark_handler_class.json": {
+        "hash": "7d672df5463f4cd59218929923eac1ba"
+    }
+}

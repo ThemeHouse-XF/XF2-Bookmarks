@@ -1,0 +1,14 @@
+{
+    "legacy_addon_id": "",
+    "title": "[TH] Bookmarks",
+    "description": "Allow your users to mark threads, posts, and other content that they'd like to view later.",
+    "version_id": 1000393,
+    "version_string": "1.0.3 Patch Level 3",
+    "dev": "ThemeHouse",
+    "dev_url": "https://www.themehouse.com",
+    "faq_url": "",
+    "support_url": "",
+    "extra_urls": [],
+    "require": [],
+    "icon": "icon.png"
+}

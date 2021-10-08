@@ -1,0 +1,9 @@
+{
+    "template": "account_visitor_menu",
+    "description": "",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "<!--[XF:account_links:bottom]-->",
+    "replace": "<xf:include template=\"th_account_visitor_menu_bookmarkLink_bookmarks\" />\n$0"
+}

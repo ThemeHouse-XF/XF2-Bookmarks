@@ -1,0 +1,9 @@
+{
+    "template": "xfrm_resource_wrapper_macros",
+    "description": "",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "<xf:if is=\"$resource.canUndelete()",
+    "replace": "<xf:include template=\"th_xfrm_resource_view_bookmarkLink_bookmarks\" />\n\n$0"
+}

@@ -1,0 +1,22 @@
+<xf:if is="$bookmarks is not empty">
+	<xf:css src="th_bookmarks.less" />
+	<xf:css src="bb_code.less" />
+
+	<div class="block"{{ widget_data($widget) }}>
+		<div class="block-container">
+			<h3 class="block-minorHeader">
+				<a href="{{ link('bookmarks') }}" rel="nofollow">{$title}</a>
+			</h3>
+			<ul class="block-body">
+				<xf:foreach loop="$bookmarks" value="$bookmark">
+					<li class="block-row">
+						<xf:macro template="th_bookmark_macros_bookmarks" name="row" arg-editLink="{{ false }}" arg-bookmark="{$bookmark}" arg-widget="{$widget}" arg-options="{$options}" />
+					</li>
+				</xf:foreach>
+			</ul>
+			<div class="block-footer">
+				<a href="{{ link('bookmarks') }}">{{ phrase('th_view_full_list_bookmarks') }}</a>
+			</div>
+		</div>
+	</div>
+</xf:if>

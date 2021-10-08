@@ -1,0 +1,9 @@
+{
+    "template": "core_button.less",
+    "description": "Add unbookmark icon.",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "&--markRead",
+    "replace": "&--unbookmark     { .m-buttonIcon(@fa-var-bookmark-o, .93em); }\n$0"
+}

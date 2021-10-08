@@ -1,0 +1,35 @@
+{
+    "public/th_account_visitor_menu_bookmarkLink_bookmarks.json": {
+        "hash": "57ede7612a188cc196607d74fad77931"
+    },
+    "public/th_forum_view_bookmarkLink_bookmarks.json": {
+        "hash": "9e72294de84577184fd1a98c74bc2714"
+    },
+    "public/th_member_view_bookmarkTabContents_bookmarks.json": {
+        "hash": "0b56adf05a9c1065e05ad033fe31a60c"
+    },
+    "public/th_member_view_bookmarkTab_bookmarks.json": {
+        "hash": "512600b83ce13d5c879dc26288426370"
+    },
+    "public/th_page_container_visitorLink_bookmarks.json": {
+        "hash": "2598a353ca48b739ae8e5e2a982c5544"
+    },
+    "public/th_post_macros_bookmarkLink_bookmarks.json": {
+        "hash": "fabd2b083846ce730ef9c7d9101ba6f7"
+    },
+    "public/th_xfmg_media_view_bookmarkLink_bookmarks.json": {
+        "hash": "48c8a294cc3d2653e57f90e9ba39cefd"
+    },
+    "public/th_xfrm_resource_wrapper_macros_bookmarks.json": {
+        "hash": "f5020ff3a068afa481ed53006bc3902a"
+    },
+    "public/thbookmarks_core_buttons_less.json": {
+        "hash": "cf2f6cbade983b96e1aeb7a03128bd08"
+    },
+    "public/thbookmarks_th_node_macros_nodes.json": {
+        "hash": "74bd29f92f63e515c83454a01ecc015c"
+    },
+    "public/thbookmarks_thread_view.json": {
+        "hash": "4316fa16bf76758b5318f03e65859cbe"
+    }
+}

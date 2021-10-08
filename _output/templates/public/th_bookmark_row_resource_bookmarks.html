@@ -1,0 +1,7 @@
+<a href="{{ link('resources', $resource) }}" class="fauxBlockLink-blockLink">{$resource.title}</a>
+
+<xf:if is="!$options.hide_container">
+	<div class="bookmarkRow-forum">
+		<span class="u-muted">{{ phrase('category:') }} <a href="{{ link('resources/categories', $category) }}">{$category.title}</a></span>
+	</div>
+</xf:if>

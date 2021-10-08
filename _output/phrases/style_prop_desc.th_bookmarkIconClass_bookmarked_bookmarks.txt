@@ -1,0 +1,1 @@
+This is the icon that will be displayed on content that has already been bookmarked.

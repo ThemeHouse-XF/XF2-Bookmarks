@@ -1,0 +1,21 @@
+<hr class="formRowSep" />
+
+<xf:numberboxrow name="options[limit]" value="{$options.limit}" min="1"
+				 label="{{ phrase('th_bookmarks_limit_bookmarks') }}" />
+
+<xf:checkboxrow label="{{ phrase('content_types') }}">
+	<xf:option name="options[limit_content_types]" selected="{$options.limit_content_types}" label="{{ phrase('th_limit_to_specific_content_types_bookmarks') }}">
+		<xf:checkbox name="options[content_types]" value="{$options.content_types}" listclass="listColumns" >
+			<xf:foreach loop="$contentTypes" key="$contentType" value="$contentTypePhrase">
+				<xf:option value="{$contentType}" label="{$contentTypePhrase}" />
+			</xf:foreach>
+		</xf:checkbox>
+	</xf:option>
+</xf:checkboxrow>
+
+<xf:checkboxrow>
+	<xf:option name="options[sticky_only]" selected="{$options.sticky_only}" label="{{ phrase('th_only_show_sticky_bookmarks_bookmarks') }}" />
+	<xf:option name="options[hide_container]" selected="{$options.hide_container}" label="{{ phrase('th_hide_container_bookmarks') }}" />
+	<xf:option name="options[hide_note]" selected="{$options.hide_note}" label="{{ phrase('th_hide_note_bookmarks') }}" />
+	<xf:option name="options[hide_date]" selected="{$options.hide_date}" label="{{ phrase('th_hide_bookmark_date_bookmarks') }}" />
+</xf:checkboxrow>

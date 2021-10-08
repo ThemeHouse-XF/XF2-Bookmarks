@@ -1,0 +1,12 @@
+{
+    "edit_format": "select",
+    "edit_format_params": "recent={{ phrase('th_recent_bookmarks_bookmarks') }}\nsticky={{ phrase('th_stuck_bookmarks_bookmarks') }}\ndisabled={{ phrase('disabled') }}",
+    "data_type": "string",
+    "sub_options": [],
+    "validation_class": "",
+    "validation_method": "",
+    "default_value": "recent",
+    "relations": {
+        "th_bookmarks": 100
+    }
+}

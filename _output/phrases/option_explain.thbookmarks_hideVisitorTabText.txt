@@ -1,0 +1,1 @@
+If enabled, this will hide the text on the visitor bookmarks tab and show only the icon.

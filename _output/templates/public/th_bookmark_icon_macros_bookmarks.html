@@ -1,0 +1,13 @@
+<xf:macro name="resource" arg-resource="!">
+	<xf:if is="$xf.options.xfrmAllowIcons">
+		{{ resource_icon($resource, 's', link('resources', $resource)) }}
+		<xf:else />
+		<xf:avatar user="$resource.User" size="s" defaultname="{$resource.username}" />
+	</xf:if>
+</xf:macro>
+
+<xf:macro name="xfmg_media" arg-media="!">
+	<a href="{{ link('media', $media) }}" class="avatar avatar--s">
+		<img src="{$media.getThumbnailUrl()}" alt="{$media.title}">
+	</a>
+</xf:macro>

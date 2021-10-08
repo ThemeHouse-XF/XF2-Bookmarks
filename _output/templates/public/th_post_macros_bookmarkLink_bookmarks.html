@@ -1,0 +1,19 @@
+<xf:if is="$post.isFirstPost()">
+	<xf:if is="$thread.canBookmark() || $thread.Bookmark">
+		<xf:macro template="th_bookmark_macros_bookmarks" name="bookmark_content"
+				  arg-bookmarkTooltip="{{ phrase('th_bookmark_thread_bookmarks') }}"
+				  arg-unbookmarkTooltip="{{ phrase('thbookmarks_edit_thread_bookmark') }}"
+				  arg-currentBookmark="{{ $thread.Bookmark }}"
+				  arg-contentType="thread"
+				  arg-contentId="{$thread.thread_id}" />
+	</xf:if>
+	<xf:else />
+	<xf:if is="$post.canBookmark() || $post.Bookmark">
+		<xf:macro template="th_bookmark_macros_bookmarks" name="bookmark_content"
+				  arg-bookmarkTooltip="{{ phrase('th_bookmark_post_bookmarks') }}"
+				  arg-unbookmarkTooltip="{{ phrase('thbookmarks_edit_post_bookmark') }}"
+				  arg-currentBookmark="{{ $post.Bookmark }}"
+				  arg-contentType="post"
+				  arg-contentId="{$post.post_id}" />
+	</xf:if>
+</xf:if>

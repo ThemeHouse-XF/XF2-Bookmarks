@@ -1,0 +1,12 @@
+<a href="{{ link('media', $media) }}" class="fauxBlockLink-blockLink">{$media.title}</a>
+
+<xf:if is="!$options.hide_container">
+	<div class="bookmarkRow-forum">
+		<xf:if is="$media.Category">
+			<span class="u-muted">{{ phrase('category:') }} <a href="{{ link('media/categories', $media.Category) }}">{$media.Category.title}</a></span>
+		</xf:if>
+		<xf:if is="$media.Album">
+			<span class="u-muted">{{ phrase('xfmg_album:') }} <a href="{{ link('media/albums', $media.Album) }}">{$media.Album.title}</a></span>
+		</xf:if>
+	</div>
+</xf:if>

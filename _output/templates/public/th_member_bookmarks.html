@@ -1,0 +1,37 @@
+<xf:title>{{ phrase('th_xs_bookmarks_bookmarks', {'name': $user.username}) }}</xf:title>
+<xf:css src="th_bookmarks.less" />
+<xf:css src="bb_code.less" />
+
+<xf:breadcrumb href="{{ link('members', $user) }}">{$user.username}</xf:breadcrumb>
+
+<div class="block">
+	<div class="block-container">
+		<div class="block-body">
+			<xf:if is="$bookmarks is not empty">
+				<ol class="listPlain">
+					<xf:foreach loop="$bookmarks" value="$bookmark">
+						<li class="block-row block-row--separated {{ $bookmark.sticky ? 'block-row--highlighted' : 'block-row--alt' }}">
+							<xf:macro template="th_bookmark_macros_bookmarks" name="row" arg-bookmark="{$bookmark}"  />
+						</li>
+					</xf:foreach>
+				</ol>
+				<xf:elseif is="$page <= 1" />
+				<div class="block-row">{{ phrase('th_no_bookmarks_to_display_bookmarks') }}</div>
+				<xf:else />
+				<div class="block-row">{{ phrase('th_no_bookmarks_can_be_shown_bookmarks') }}</div>
+			</xf:if>
+		</div>
+		<xf:if is="$hidePagination && $bookmarks is not empty">
+			<div class="block-footer">
+				<span class="block-footer-controls"><xf:button href="{{ link('members/bookmarks', $user) }}" rel="nofollow">
+					{{ phrase('see_more') }}
+				</xf:button></span>
+			</div>
+		</xf:if>
+	</div>
+
+	<xf:if is="!$hidePagination">
+		<xf:pagenav link="members/bookmarks" data="{$user}" page="{$page}" perpage="{$perPage}" total="{$totalBookmarks}" params="{$pageNavParams}"
+					wrapperclass="block-outer block-outer--after" />
+	</xf:if>
+</div>

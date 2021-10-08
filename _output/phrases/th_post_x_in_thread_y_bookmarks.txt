@@ -1,0 +1,1 @@
+Post <a href="{post_url}" class="fauxBlockLink-blockLink">#{post_position}</a> in thread <a href="{thread_url}">{thread_title}</a>

@@ -1,0 +1,7 @@
+<a href="{{ link('threads', $thread) }}" class="fauxBlockLink-blockLink">{$thread.title}</a>
+
+<xf:if is="!$options.hide_container">
+	<div class="bookmarkRow-forum">
+		<span class="u-muted">{{ phrase('forum:') }} <a href="{{ link('forums', $forum) }}">{$forum.title}</a></span>
+	</div>
+</xf:if>

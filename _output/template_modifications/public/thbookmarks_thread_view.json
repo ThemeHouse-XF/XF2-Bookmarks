@@ -1,0 +1,9 @@
+{
+    "template": "thread_view",
+    "description": "Adds bookmark link to threads",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "<xf:if is=\"$thread.canWatch()\">",
+    "replace": "<xf:if is=\"$thread.canBookmark()\">\n\t<xf:macro template=\"th_bookmark_macros_bookmarks\" name=\"bookmark_content\"\n\t\t\t  arg-isButton=\"{{ true }}\"\n\t\t\t  arg-bookmarkTooltip=\"{{ phrase('th_bookmark_thread_bookmarks') }}\"\n\t\t\t  arg-unbookmarkTooltip=\"{{ phrase('thbookmarks_edit_thread_bookmark') }}\"\n\t\t\t  arg-currentBookmark=\"{{ $thread.Bookmark }}\"\n\t\t\t  arg-contentType=\"thread\"\n\t\t\t  arg-contentId=\"{$thread.thread_id}\" />\n</xf:if>\n$0"
+}

@@ -1,0 +1,1 @@
+Set the class for the bookmark icon here if you'd like to use a different font set or a different FontAwesome icon.

@@ -1,0 +1,8 @@
+<xf:if is="$mediaItem.canBookmark() || $mediaItem.Bookmark">
+	<xf:macro template="th_bookmark_macros_bookmarks" name="bookmark_content"
+			  arg-bookmarkTooltip="{{ phrase('th_bookmark_media_bookmarks') }}"
+			  arg-unbookmarkTooltip="{{ phrase('th_unbookmark_media_bookmarks') }}"
+			  arg-currentBookmark="{{ $mediaItem.Bookmark }}"
+			  arg-contentType="xfmg_media"
+			  arg-contentId="{$mediaItem.media_id}" />
+</xf:if>

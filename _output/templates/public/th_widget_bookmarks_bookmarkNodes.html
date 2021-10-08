@@ -1,0 +1,57 @@
+<xf:if is="$bookmarks is not empty">
+	<xf:css src="th_bookmarks.less" />
+	<xf:css src="bb_code.less" />
+
+	<div class="block"{{ widget_data($widget) }}>
+		<div class="block-container">
+			<h3 class="block-header">
+				<a href="{{ link('bookmarks') }}" rel="nofollow">{$title}</a>
+			</h3>
+			<div class="th_bookmarkNodesList">
+				<xf:foreach loop="$bookmarks" value="$bookmark">
+
+					<xf:if is="{$bookmark.Content.node_type_id} == 'Page'">
+						<xf:set var="$nodeType" value="page" />
+						<xf:set var="$nodeLink" value="pages" />
+					<xf:elseif is="{$bookmark.Content.node_type_id} == 'Link'" />
+						<xf:set var="$nodeType" value="link" />
+					<xf:elseif is="{$bookmark.Content.node_type_id} == 'Category'" />
+						<xf:set var="$nodeType" value="category" />
+					<xf:elseif is="{$bookmark.Content.node_type_id} == 'Forum'" />
+						<xf:set var="$nodeType" value="forum" />
+						<xf:set var="$nodeLink" value="forums" />
+
+						<xf:if is="{$bookmark.Content.Data.isUnread()} == true">
+							<xf:set var="$nodeUnread" value="node--unread" />
+						<xf:else />
+							<xf:set var="$nodeUnread" value="" />
+						</xf:if>
+					</xf:if>
+					
+					<xf:set var="$extras" value="{{ [] }}" />
+					<xf:if is="$bookmark.Content.Data.isUnread()">
+					<xf:set var="$extras.hasNew" value="{{ true }}" />
+					</xf:if>
+					
+					<xf:if is="{{ is_addon_active('ThemeHouse/Nodes') }}">
+						<xf:set var="$nodesExtraClasses" value="{{ th_nodeclasses_nodes($bookmark.Content, []) }}" />
+						<xf:set var="$nodeIcon">{{ th_nodeicon_nodes($bookmark.Content, $extras) }}</xf:set>
+					</xf:if>
+
+					<div class="node--outer">
+						<div class="node {$nodeUnread} {$nodesExtraClasses} node--{$bookmark.Content.node_type_id|to_lower} node--id{$bookmark.Content.node_id}">
+							<div class="node-body">
+
+								<span class="node-icon" aria-hidden="true"><i>{$nodeIcon}</i></span>
+								<h3 class="node-title">
+									<a href="{{ $bookmark.getLink() }}">{$bookmark.Content.title}</a>
+								</h3>
+
+							</div>
+						</div>
+					</div>
+				</xf:foreach>
+			</div>
+		</div>
+	</div>
+</xf:if>

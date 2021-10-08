@@ -1,0 +1,9 @@
+{
+    "template": "xfmg_media_view",
+    "description": "",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "<xf:if is=\"$mediaItem.canReport()\">",
+    "replace": "<xf:include template=\"th_xfmg_media_view_bookmarkLink_bookmarks\" />\n\n$0"
+}

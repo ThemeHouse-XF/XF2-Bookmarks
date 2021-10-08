@@ -1,0 +1,9 @@
+{
+    "template": "th_node_macros_nodes",
+    "description": "Add bookmark link to footer.",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "preg_replace",
+    "find": "/(<div class=\"node-footer--actions\">.*)(<\\/div>)/sU",
+    "replace": "${1}\n<xf:if is=\"$node.node_type_id === 'Forum'\n\t\t   && ($node.canBookmark() || $node.Bookmark)\">\n\t<xf:macro template=\"th_bookmark_macros_bookmarks\" name=\"bookmark_content\"\n\t\t\t  arg-bookmarkTooltip=\"{{ phrase('th_bookmark_forum_bookmarks') }}\"\n\t\t\t  arg-unbookmarkTooltip=\"{{ phrase('thbookmarks_edit_forum_bookmark') }}\"\n\t\t\t  arg-currentBookmark=\"{{ $node.Bookmark }}\"\n\t\t\t  arg-contentType=\"node\"\n\t\t\t  arg-aClass=\"button--link\"\n\t\t\t  arg-contentId=\"{$node.node_id}\" />\n</xf:if>\n${2}"
+}

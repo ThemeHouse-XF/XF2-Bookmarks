@@ -1,0 +1,10 @@
+<xf:macro name="tab" arg-user="!">
+	<a href="{{ link('members/bookmarks', $user) }}"
+	   class="tabs-tab"
+	   id="bookmarks"
+	   role="tab">{{ phrase('th_bookmarks_bookmarks') }}</a>
+</xf:macro>
+
+<li data-href="{{ link('members/bookmarks', $user, {'hide_pagination': 1}) }}" role="tabpanel" aria-labelledby="bookmarks">
+	<div class="blockMessage">{{ phrase('loading...') }}</div>
+</li>

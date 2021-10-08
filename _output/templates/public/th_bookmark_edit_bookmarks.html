@@ -1,0 +1,40 @@
+<xf:title>{{ $handler->getBookmarkPhrase($content) }}</xf:title>
+
+
+<xf:form action="{{ link('bookmarks/save', $bookmark) }}" class="block" data-xf-init="ajax-submit">
+	<div class="block-container">
+		<div class="block-body">
+			<xf:textboxrow label="{{ phrase('note') }}" name="note" value="{$bookmark.note}" />
+
+			<xf:checkboxrow>
+				<xf:option name="sticky" selected="{$bookmark.sticky}" label="{{ phrase('sticky') }}" />
+				<xf:option name="public" selected="{$bookmark.public}" label="{{ phrase('public') }}" />
+			</xf:checkboxrow>
+
+			<xf:if is="$bookmark.isInsert()">
+				{{$handler->renderExtraCreateFields($content)|raw}}
+				<xf:else />
+				{{$handler->renderExtraEditFields($content)|raw}}
+			</xf:if>
+
+			<xf:submitrow icon="save">
+				<xf:html>
+					<xf:if is="!$bookmark.isInsert()">
+						<xf:button href="{{ link('bookmarks/delete', $bookmark) }}"
+								   value="1"
+								   icon="unbookmark"
+								   overlay="true">
+							{{ phrase('thbookmarks_unbookmark') }}
+						</xf:button>
+					</xf:if>
+				</xf:html>
+			</xf:submitrow>
+			<xf:hiddenval name="content_type" value="{$contentType}" />
+			<xf:hiddenval name="content_id" value="{$contentId}" />
+
+			<xf:if is="$redirect">
+				<xf:hiddenval name="_xfRedirect" value="{$redirect}" />
+			</xf:if>
+		</div>
+	</div>
+</xf:form>

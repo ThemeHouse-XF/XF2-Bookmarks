@@ -1,0 +1,5 @@
+{
+    "content_type": "resource",
+    "field_name": "th_bookmark_handler_class",
+    "field_value": "ThemeHouse\\Bookmarks\\BookmarkHandler\\ResourceItem"
+}

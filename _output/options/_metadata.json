@@ -1,0 +1,23 @@
+{
+    "th_bookmarksPerPage_bookmarks.json": {
+        "hash": "1d525000a5f13786e9f36d1a24d67928"
+    },
+    "th_enableContentTypes_bookmarks.json": {
+        "hash": "cbf7e7f898fb829244fbab74e33eb4f1"
+    },
+    "th_navigationDropdown_bookmarks.json": {
+        "hash": "785071cffbca5a3229adfcc659e3f0d2"
+    },
+    "th_popupLimit_bookmarks.json": {
+        "hash": "a68d33807de1ac1e438c001c6cebd7fe"
+    },
+    "thbookmarks_fastBookmark.json": {
+        "hash": "f08fb169e55d06b330f18e6a284f9485"
+    },
+    "thbookmarks_hideVisitorTabText.json": {
+        "hash": "fd3f43bd109942114ed6110e1f6fdf98"
+    },
+    "thbookmarks_showVisitorTab.json": {
+        "hash": "6d12c1e5ca4929ce1249e9052f9c2966"
+    }
+}

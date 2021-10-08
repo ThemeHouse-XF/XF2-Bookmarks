@@ -1,0 +1,1 @@
+Bookmark widget must be configured to display one or more bookmarks

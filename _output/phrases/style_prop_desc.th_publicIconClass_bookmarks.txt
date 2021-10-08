@@ -1,0 +1,1 @@
+This is the icon that will be used to indicate a public bookmark.

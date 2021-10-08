@@ -1,0 +1,9 @@
+{
+    "template": "PAGE_CONTAINER",
+    "description": "Adds bookmark visitor tab",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "preg_replace",
+    "find": "/<a href=\"{{ link\\('account\\/alerts'\\) }}\">{{ phrase\\('show_all\\.\\.\\.'\\) }}<\\/a>(.*?)<\\/div>(.*?)<\\/div>(.*?)<\\/div>/s",
+    "replace": "$0\n<xf:if is=\"$xf.options.thbookmarks_showVisitorTab && $xf.visitor.Bookmarks.count()\">\n\t<xf:include template=\"th_page_container_visitorLink_bookmarks\" />\n</xf:if>"
+}

@@ -1,0 +1,13 @@
+{
+    "group_name": "th_bookmarks",
+    "title": "Public icon class",
+    "description": "This is the icon that will be used to indicate a public bookmark.",
+    "property_type": "value",
+    "css_components": [],
+    "value_type": "string",
+    "value_parameters": "",
+    "depends_on": "",
+    "value_group": "",
+    "property_value": "fa fa-eye",
+    "display_order": 1003
+}

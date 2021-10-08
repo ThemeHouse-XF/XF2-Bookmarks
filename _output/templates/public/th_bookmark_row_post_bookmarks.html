@@ -1,0 +1,13 @@
+{{ phrase('th_post_x_in_thread_y_bookmarks', {
+	"post_url": link('posts', $post),
+	"post_position": $post.position + 1,
+
+	"thread_url": link('threads', $thread),
+	"thread_title": $thread.title
+})}}
+
+<xf:if is="!$options.hide_container">
+	<div class="bookmarkRow-forum">
+		<span class="u-muted">{{ phrase('forum:') }} <a href="{{ link('forums', $forum) }}">{$forum.title}</a></span>
+	</div>
+</xf:if>

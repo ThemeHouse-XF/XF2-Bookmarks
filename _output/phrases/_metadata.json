@@ -1,0 +1,434 @@
+{
+    "option.th_bookmarksPerPage_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "85da0efc7b1786d011db928c77cf34f9"
+    },
+    "option.th_enableContentTypes_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "f7adfde7f9fff21f2243334b683d259c"
+    },
+    "option.th_navigationDropdown_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "f64432e4efb4675399dd49ce3d741474"
+    },
+    "option.th_popupLimit_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "01f0f2896985292d47d9ffd1a3682cc5"
+    },
+    "option.thbookmarks_fastBookmark.txt": {
+        "global_cache": false,
+        "version_id": 1000370,
+        "version_string": "1.0.3",
+        "hash": "969fe66d91a27f565e08a421f6525094"
+    },
+    "option.thbookmarks_hideVisitorTabText.txt": {
+        "global_cache": false,
+        "version_id": 1000297,
+        "version_string": "1.0.2 Patch Level 7",
+        "hash": "ba96b07fa4591ba9a9afd9b061dcaa3a"
+    },
+    "option.thbookmarks_showVisitorTab.txt": {
+        "global_cache": false,
+        "version_id": 1000296,
+        "version_string": "1.0.2 Patch Level 6",
+        "hash": "b15b70e8f5d8af62d99b2ed3e7c465a5"
+    },
+    "option_explain.th_bookmarksPerPage_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "40da9a2b86447d636e7f9618596540c9"
+    },
+    "option_explain.th_enableContentTypes_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "option_explain.th_navigationDropdown_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "option_explain.th_popupLimit_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "option_explain.thbookmarks_fastBookmark.txt": {
+        "global_cache": false,
+        "version_id": 1000370,
+        "version_string": "1.0.3",
+        "hash": "7aa20d8ee2f485d590e7dd50e0d7fb2c"
+    },
+    "option_explain.thbookmarks_hideVisitorTabText.txt": {
+        "global_cache": false,
+        "version_id": 1000297,
+        "version_string": "1.0.2 Patch Level 7",
+        "hash": "c6c6690f57dafa969a69a5d14de0f9bf"
+    },
+    "option_explain.thbookmarks_showVisitorTab.txt": {
+        "global_cache": false,
+        "version_id": 1000296,
+        "version_string": "1.0.2 Patch Level 6",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "option_group.th_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "0d034c7463a7222b33f9836f506b35b8"
+    },
+    "option_group_description.th_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000296,
+        "version_string": "1.0.2 Patch Level 6",
+        "hash": "eeb04027e6a7312f8ff5c93782e625d5"
+    },
+    "permission.th_bookmarks_canBookmark.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "d7fd97a3ebe7d955daf841fe7c8605a9"
+    },
+    "permission.th_bookmarks_maxBookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000296,
+        "version_string": "1.0.2 Patch Level 6",
+        "hash": "ea8b0e9ad974572f945e220ec6a82e61"
+    },
+    "permission_interface.th_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000370,
+        "version_string": "1.0.3",
+        "hash": "9efdadd31ff79084077940df1e35ba6e"
+    },
+    "style_prop.th_bookmarkIconClass_bookmarked_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "543899f78ddabf0cc48a4f2971be0ec7"
+    },
+    "style_prop.th_bookmarkIconClass_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "b529f518d350b7d2a86dbca4725c90d3"
+    },
+    "style_prop.th_publicIconClass_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "856c23ac7ae2d12c81fa7744a28e6dff"
+    },
+    "style_prop.th_stickyIconClass_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "ff0286a998e92255080e6efd89c386d6"
+    },
+    "style_prop_desc.th_bookmarkIconClass_bookmarked_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "715f97f6d9386dab05ef22a60f8183fb"
+    },
+    "style_prop_desc.th_bookmarkIconClass_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "a0644ed10ea509139d606d88ccb9d71e"
+    },
+    "style_prop_desc.th_publicIconClass_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "7eca79838ece18dec2b2a183edf85ae3"
+    },
+    "style_prop_desc.th_stickyIconClass_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "daf7d07191a0718eca07131397620a22"
+    },
+    "style_prop_group.th_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "0d034c7463a7222b33f9836f506b35b8"
+    },
+    "style_prop_group_desc.th_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "th_bookmark_content_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "8a098c944fe54c3209e02613a1a69e5f"
+    },
+    "th_bookmark_forum_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "021ae5056dd45293a80d21f708faa101"
+    },
+    "th_bookmark_media_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000033,
+        "version_string": "1.0.0 Beta 3",
+        "hash": "28ac5fda2fa53ef2eae19a3b8a1566ad"
+    },
+    "th_bookmark_post_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "a3c9f4d9eed57bf5db36335198ab7c18"
+    },
+    "th_bookmark_resource_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000033,
+        "version_string": "1.0.0 Beta 3",
+        "hash": "00509ffe14c8941c94ed2d506d34c01d"
+    },
+    "th_bookmark_thread_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "999146ff7874088df882f24e14155453"
+    },
+    "th_bookmark_x_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "67e588b02d75638e462b6af2795b7005"
+    },
+    "th_bookmarks_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "7a69d6b27362b48011a2a09c56e04bce"
+    },
+    "th_bookmarks_limit_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000032,
+        "version_string": "1.0.0 Beta 2",
+        "hash": "4dde304f4fc0147862db24f7f5fb93d6"
+    },
+    "th_confirm_that_you_want_to_remove_following_bookmark_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "92df882391c44fb1daaa3e57aeb295b2"
+    },
+    "th_content_already_bookmarked_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "9475a5496fd1b8c2907005ce7c2b3a68"
+    },
+    "th_delete_bookmark_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "e54dd1b1190e7b8dd43cf1e91791f53e"
+    },
+    "th_hide_bookmark_date_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "aa493c9675290885f6ca3afa9bee0b62"
+    },
+    "th_hide_container_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "a4623a57654449295e40bd2ccf80238a"
+    },
+    "th_hide_note_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "0ffbf107ddf433655a052d326c5890ed"
+    },
+    "th_limit_to_specific_content_types_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000032,
+        "version_string": "1.0.0 Beta 2",
+        "hash": "5c2a573b6e61454bd87d52cd5cb4a846"
+    },
+    "th_no_bookmarks_can_be_shown_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "d309dd90a11d182c20f0a46944b889e9"
+    },
+    "th_no_bookmarks_to_display_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "a3eac3237c815a2f2057ef4593a0477c"
+    },
+    "th_only_show_sticky_bookmarks_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000032,
+        "version_string": "1.0.0 Beta 2",
+        "hash": "c8390bda2e2f44566861eeb486bb3463"
+    },
+    "th_post_x_in_thread_y_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "aaf0a605928ba8926b8d93d4e5c51745"
+    },
+    "th_recent_bookmarks_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "0f6b9bc8cd1c38a885845e10d8b0fe5f"
+    },
+    "th_stuck_bookmarks_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "b7269307f32f1fe8004ba1dff9eea2b3"
+    },
+    "th_this_content_cannot_be_bookmarked_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "d783fba11bda330a727541fa03f7d525"
+    },
+    "th_unbookmark_content_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "6fd6be6a20c00b0cecb3ac5ae29997bf"
+    },
+    "th_unbookmark_forum_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "b8611440156ff34ec0db48c794eed16b"
+    },
+    "th_unbookmark_media_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000033,
+        "version_string": "1.0.0 Beta 3",
+        "hash": "21380f0fc5a66e67b20acd6b7d994301"
+    },
+    "th_unbookmark_post_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "0ec05c43e5a78ff172d35c947aa9af62"
+    },
+    "th_unbookmark_resource_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000033,
+        "version_string": "1.0.0 Beta 3",
+        "hash": "f6de2dcee0712f99776fc27d23fbb8f6"
+    },
+    "th_unbookmark_thread_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "ce020a6aa96edc13d1010e1fd352432a"
+    },
+    "th_view_full_list_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000032,
+        "version_string": "1.0.0 Beta 2",
+        "hash": "725dba351505ebf938fc91aec4f9ef61"
+    },
+    "th_xs_bookmarks_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "23ee86fe4baaf02bfcf9587682ee5ea3"
+    },
+    "thbookmarks_bookmark_widget_must_be_configured_to_display_one_or_more_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000370,
+        "version_string": "1.0.3",
+        "hash": "27c22c5baf8e62dbeca205132b0aa36d"
+    },
+    "thbookmarks_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000331,
+        "version_string": "1.0.3 Beta 1",
+        "hash": "7a69d6b27362b48011a2a09c56e04bce"
+    },
+    "thbookmarks_edit_forum_bookmark.txt": {
+        "global_cache": false,
+        "version_id": 1000296,
+        "version_string": "1.0.2 Patch Level 6",
+        "hash": "b6ee019880b492d847b82bb04874c7e8"
+    },
+    "thbookmarks_edit_post_bookmark.txt": {
+        "global_cache": false,
+        "version_id": 1000296,
+        "version_string": "1.0.2 Patch Level 6",
+        "hash": "fdf2859fc69622b7ea7be92910166ef2"
+    },
+    "thbookmarks_edit_thread_bookmark.txt": {
+        "global_cache": false,
+        "version_id": 1000296,
+        "version_string": "1.0.2 Patch Level 6",
+        "hash": "2df8e8ce8134c47d2f5214a0949cfb78"
+    },
+    "thbookmarks_sort_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000297,
+        "version_string": "1.0.2 Patch Level 7",
+        "hash": "f60244d1039e3a7a8e9959851d42fbb5"
+    },
+    "thbookmarks_unbookmark.txt": {
+        "global_cache": false,
+        "version_id": 1000296,
+        "version_string": "1.0.2 Patch Level 6",
+        "hash": "efcdc3066318f08a3d5578d5aa2b33ce"
+    },
+    "thbookmarks_you_have_no_bookmarks_to_sort.txt": {
+        "global_cache": false,
+        "version_id": 1000370,
+        "version_string": "1.0.3",
+        "hash": "f214e6890ea079b903a3fbafbd458297"
+    },
+    "widget_def.th_bookmarkNodes.txt": {
+        "global_cache": false,
+        "version_id": 1000371,
+        "version_string": "1.0.3 Patch Level 1",
+        "hash": "70ca99021ec4db553968d73cc03124fe"
+    },
+    "widget_def.th_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000032,
+        "version_string": "1.0.0 Beta 2",
+        "hash": "7a69d6b27362b48011a2a09c56e04bce"
+    },
+    "widget_def_desc.th_bookmarkNodes.txt": {
+        "global_cache": false,
+        "version_id": 1000370,
+        "version_string": "1.0.3",
+        "hash": "dd7c6bd0bfa58beed58f213d80cf8d64"
+    },
+    "widget_def_desc.th_bookmarks.txt": {
+        "global_cache": false,
+        "version_id": 1000032,
+        "version_string": "1.0.0 Beta 2",
+        "hash": "47cfc21fdafca5975cd46bf7ac6fb4ac"
+    }
+}

@@ -1,0 +1,10 @@
+<xf:if is="$forum.Node.canBookmark() || $forum.Node.Bookmark">
+	<xf:macro template="th_bookmark_macros_bookmarks" name="bookmark_content"
+			  arg-bookmarkTooltip="{{ phrase('th_bookmark_forum_bookmarks') }}"
+			  arg-unbookmarkTooltip="{{ phrase('thbookmarks_edit_forum_bookmark') }}"
+			  arg-currentBookmark="{{ $forum.Node.Bookmark }}"
+			  arg-contentType="node"
+			  arg-isButton="{{ true }}"
+			  arg-aClass="button--link"
+			  arg-contentId="{$forum.node_id}" />
+</xf:if>

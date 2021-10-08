@@ -1,0 +1,10 @@
+<xf:if is="$resource.canBookmark() || $resource.Bookmark">
+	<xf:macro template="th_bookmark_macros_bookmarks" name="bookmark_content"
+			  arg-bookmarkTooltip="{{ phrase('th_bookmark_resource_bookmarks') }}"
+			  arg-unbookmarkTooltip="{{ phrase('th_unbookmark_resource_bookmarks') }}"
+			  arg-currentBookmark="{{ $resource.Bookmark }}"
+			  arg-contentType="resource"
+			  arg-isButton="1"
+			  arg-aClass="button--link"
+			  arg-contentId="{$resource.resource_id}" />
+</xf:if>

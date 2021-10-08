@@ -1,0 +1,18 @@
+<xf:set var="$thNodes" value="ThemeHouse/Nodes" />
+<xf:set var="$thNodesInstalled" value="0" />
+<xf:set var="$extraNodeClasses" value="" />
+<xf:if is="{$xf.addOns.{$thNodes}}">
+	<xf:set var="$thNodesInstalled" value="1" />
+	<xf:set var="$extraNodeClasses" value="{{ th_nodeclasses_nodes($node, $extras) }}" />
+</xf:if>
+<div class="node node--forum node--id{$node.node_id} {{ $extras.hasNew ? 'node--unread' : 'node--read' }} {$extraNodeClasses}">
+	<div class="node-icon">
+		<i>
+			<xf:if is="$thNodesInstalled">
+				{{ th_nodeicon_nodes($node, $extras) }}
+			</xf:if>
+		</i>
+	</div>
+</div>
+
+<xf:css src="node_list.less" />

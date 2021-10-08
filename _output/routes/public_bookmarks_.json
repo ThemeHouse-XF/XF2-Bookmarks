@@ -1,0 +1,11 @@
+{
+    "route_type": "public",
+    "route_prefix": "bookmarks",
+    "sub_name": "",
+    "format": ":int<bookmark_id,note>/",
+    "build_class": "",
+    "build_method": "",
+    "controller": "ThemeHouse\\Bookmarks:Bookmark",
+    "context": "th_bookmark",
+    "action_prefix": ""
+}

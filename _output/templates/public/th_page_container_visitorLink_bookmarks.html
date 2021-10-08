@@ -1,0 +1,32 @@
+<xf:if is="$xf.options.th_navigationDropdown_bookmarks !== 'disabled'">
+	<a href="{{ link('bookmarks') }}"
+	   class="p-navgroup-link p-navgroup-link--iconic p-navgroup-link--bookmarks"
+	   data-xf-click="menu"
+	   data-xf-key="#190"
+	   data-menu-pos-ref="< .p-navgroup"
+	   aria-expanded="false"
+	   aria-haspopup="true">
+		<i class="{{ property('th_bookmarkIconClass_bookmarked_bookmarks') }}" aria-hidden="true"></i>
+		<span class="p-navgroup-linkText">
+			<xf:if is="!$xf.options.thbookmarks_hideVisitorTabText">
+				{{ phrase('th_bookmarks_bookmarks') }}
+			</xf:if>
+		</span>
+	</a>
+	<div class="menu menu--structural menu--medium" data-menu="menu" aria-hidden="true"
+		 data-href="{{ link('bookmarks/popup') }}"
+		 data-nocache="true"
+		 data-load-target=".js-bookmarksMenuBody">
+		<div class="menu-content">
+			<h3 class="menu-header">{{ phrase('th_bookmarks_bookmarks') }}</h3>
+			<div class="js-bookmarksMenuBody">
+				<div class="menu-row">{{ phrase('loading...') }}</div>
+			</div>
+			<div class="menu-footer menu-footer--split">
+				<span class="menu-footer-main">
+					<a href="{{ link('bookmarks') }}">{{ phrase('show_all...') }}</a>
+				</span>
+			</div>
+		</div>
+	</div>
+</xf:if>
